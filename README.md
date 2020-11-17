@@ -10,11 +10,11 @@
 
 
 # Installation
-##### Git clone this repository to your your environment:
+##### Git clone this repository to your environment:
 
     git clone https://github.com/KovalivSviatoslav/DRF_admin_csv_import.git
 
-##### Move into your the cloned repository with "cd" command. For example:
+##### Move into your cloned repository with "cd" command. For example:
 
     cd src
 
