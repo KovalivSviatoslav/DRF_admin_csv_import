@@ -1,0 +1,29 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <div>
+        <style>
+            button {
+                position: relative;
+                right: 56px;
+                background: #ffffff;
+                cursor: pointer;
+                padding: 3px 10px;
+                transition: 0.4s;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color:#79AEC8;
+                }
+        </style>
+
+        <form method="POST" enctype="multipart/form-data" style="text-align: center">
+            {{ form.as_p }}
+            {% csrf_token %}
+
+                <button type="submit">Upload CSV</button>
+        </form>
+    </div>
+    <br />
+
+{% endblock %}

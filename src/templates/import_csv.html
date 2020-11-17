@@ -1,0 +1,11 @@
+{% extends 'admin/change_list.html' %}
+{% block object-tools-items %}
+    <li>
+        <a href="import-csv/" style="
+        background-repeat: no-repeat;
+        background-position: right 7px center;
+        padding-right: 26px;background-image: url(/static/admin/img/tooltag-add.svg);
+        ">Import CSV</a>
+    </li>
+    {{ block.super }}
+{% endblock %}
