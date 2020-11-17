@@ -10,25 +10,26 @@
 
 
 # Installation
-Git clone this repository to your PC:
+##### Git clone this repository to your your environment:
 
     git clone https://github.com/KovalivSviatoslav/DRF_admin_csv_import.git
 
-Cd into your the cloned repository as such:
+##### Move into your the cloned repository with "cd" command. For example:
 
     cd src
 
-Install using `pip`...
+##### Install packages using `pip`:
 
     pip install -r requirements.txt
 
-
-
-###### Startup up a this project like so..
+##### Run following commands at first project run:
 
     ./manage.py makemigrations
     ./manage.py migrate
     ./manage.py createsuperuser
+
+##### Next step is running your server. For that use:
+
     ./manage.py runserver
 
 # API
@@ -42,5 +43,3 @@ URL Style | HTTP Method | Action
 /customers/{id}/ | PATCH | partial customer update
 /customers/{id}/ | DELETE | remove a customer
 /customer/?created_at={yyyy-mm-dd} | GET | customer filter by creation date
-
-# END
